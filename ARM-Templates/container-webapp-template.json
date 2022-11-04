@@ -23,11 +23,11 @@
             "type": "String"
         },
         "registryName": {
-            "defaultValue": "jfh01-devopsreg",
+            "defaultValue": "jfh01devopsreg",
             "type": "String"
         },
         "imageName": {
-            "defaultValue": "jfh01-devopsimage",
+            "defaultValue": "jfh01devopsimage",
             "type":"String"
         },
         "registryLocation": {
