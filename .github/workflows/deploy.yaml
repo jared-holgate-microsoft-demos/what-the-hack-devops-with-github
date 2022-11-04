@@ -17,5 +17,5 @@ jobs:
         with:
           scope: resourcegroup
           resourceGroupName: what-the-hack-devops-with-github
-          template: ARM-Templates/container-webapp-template.json
+          template: ./ARM-Templates/container-webapp-template.json
           deploymentMode: Incremental
