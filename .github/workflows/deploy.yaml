@@ -17,5 +17,5 @@ jobs:
         with:
           scope: resourcegroup
           resourceGroupName: "what-the-hack-devops-with-github"
-          template: "${{ env.GITHUB_WORKSPACE }}/ARM-Templates/container-webapp-template.json"
+          template: "${{ github.workspace }}/ARM-Templates/container-webapp-template.json"
           deploymentMode: Incremental
