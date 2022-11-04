@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     environment: dev
     steps:
-      - name: ls
-        run: ls
+      - name: Checkout
+        uses: actions/checkout@v2.5.0
       - name: Azure Login
         uses: Azure/login@v1.4.6
         with:
@@ -19,5 +19,5 @@ jobs:
         with:
           scope: resourcegroup
           resourceGroupName: "what-the-hack-devops-with-github"
-          template: "${{ github.workspace }}/ARM-Templates/container-webapp-template.json"
+          template: "ARM-Templates/container-webapp-template.json"
           deploymentMode: Incremental
