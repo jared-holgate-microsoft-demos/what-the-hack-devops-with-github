@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     environment: dev
     steps:
+      - name: ls
+        run: ls
       - name: Azure Login
         uses: Azure/login@v1.4.6
         with:
